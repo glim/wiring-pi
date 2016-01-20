@@ -40,7 +40,7 @@ rm ./install.log 2>/dev/null 1>&2
 
 echo -n "Cloning libWiringPi ... "
 rm -Rf ./wiringpi 2>/dev/null 1>&2
-git clone https://github.com/nekuz0r/wiringpi.git -b 2.25 > ./install.log 2>&1
+git clone https://github.com/glim/wiringpi.git > ./install.log 2>&1
 check_git_clone
 #git submodule init
 #check_git_clone
@@ -50,7 +50,7 @@ echo "done."
 
 patch ./wiringpi/devLib/Makefile < ./patchs/devLib_Makefile.patch
 patch ./wiringpi/gpio/Makefile < ./patchs/gpio_Makefile.patch
-patch ./wiringpi/wiringPi/wiringPi.c < ./patchs/wiringPi_wiringPi.c.patch
+# patch ./wiringpi/wiringPi/wiringPi.c < ./patchs/wiringPi_wiringPi.c.patch
 
 echo -n "Making libWiringPi ... "
 cd ./wiringpi/wiringPi/

@@ -9,6 +9,7 @@
 #include "piGlow.h"
 #include "piNes.h"
 #include "tcs34725.h"
+#include "pcd8544.h"
 
 IMPLEMENT_EXPORT_INIT(devlib) {
   INIT(ds1302);
@@ -20,4 +21,5 @@ IMPLEMENT_EXPORT_INIT(devlib) {
   INIT(piGlow);
   INIT(piNes);
   INIT(tcs34725);
+  INIT(pcd8544);
 }

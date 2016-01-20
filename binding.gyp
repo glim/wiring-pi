@@ -45,7 +45,8 @@
         'src/devlib/piFace.cc',
         'src/devlib/piGlow.cc',
         'src/devlib/piNes.cc',
-        'src/devlib/tcs34725.cc'
+        'src/devlib/tcs34725.cc',
+        'src/devlib/pcd8544.cc',
       ],
       'include_dirs': [
         'wiringpi/wiringPi',
